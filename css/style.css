@@ -1,0 +1,236 @@
+/* Index */
+#animacija {
+    height: 200px;
+    width: 95%;
+    background-image: url("space.jpg");
+    border: 3px solid red;
+    border-radius: 15px;
+    position: relative;
+    animation-name: pomeranje;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes pomeranje {
+    from {
+        left: 0;
+    }
+    to {
+        left: 65px;
+    }
+}
+
+#raketa {
+    width: 100px;
+    height: 80px;
+    border-radius: 100%;
+    position: relative;
+    animation-name: sirina, visina, rotiranje;
+    animation-duration: 8s, 3s;
+    animation-delay: 0s, 0s;
+    animation-iteration-count: infinite, infinite;
+    animation-direction: alternate, alternate;
+    animation-timing-function: linear, linear;
+}
+
+@keyframes sirina {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 100px);
+    }
+}
+
+@keyframes visina {
+    from {
+        top: 0;
+    }
+    to {
+        top: 120px;
+    }
+}
+
+@keyframes rotiranje{
+    10%{transform: rotate(180deg)}
+    20%{transform: rotate(60deg)}
+    30%{transform: rotate(180deg)}
+    40%{transform: rotate(60deg)}
+    50%{transform: rotate(360deg)}
+    60%{transform: rotate(80deg)}
+    70%{transform: rotate(240deg)}
+    80%{transform: rotate(180deg)}
+    90%{transform: rotate(80deg)}
+    100%{transform: rotate(360deg)}
+}
+
+.link{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.link>a:link,.link>a:visited {
+    border: 3px solid blue;
+    border-radius: 15px;
+    background-color: rgb(97, 59, 235);
+    color: yellow;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 95%;
+}
+
+.link>a:hover,.link>a:active {
+    background-color: blue;
+}
+
+#footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: rgb(221, 221, 117);
+    text-align: center;
+}
+
+.kolona {
+    background-image: url("svemir.jpg");
+    color: yellow;
+    margin: 5px;
+    float: left;
+    width: 50%;
+    border: 3px solid red;
+}
+
+.red:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#podaci{
+    margin: 15px;
+}
+
+#umotvorinaProzor {
+    width: 35%;
+    border: 3px solid red;
+    border-radius: 5px;
+}
+
+#umotvorina {
+    padding: 5px 5px;
+    font-size: 20px;
+    color: yellow;
+    font-style: italic;
+}
+
+/* grupa 1 */
+
+#home>a:link,#home>a:visited {
+    background-color: rgb(97, 59, 235);
+    border: 3px solid blue;
+    border-radius: 15px;
+    color: yellow;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 95%;
+}
+
+#home>a:hover,#home>a:active {
+    background-color: blue;
+}
+
+.column {
+    float: left;
+    width: 32%;
+    padding: 5px;
+}
+
+.column img {
+    opacity: 0.8;
+    height: 250px;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-top: 30px;
+}
+
+.zoomImage > img {
+    width: 100%;
+    height: 850px;
+}
+
+/* grupa 2 */
+
+th {
+    background-image: url("svemir.jpg");
+    border: 5px solid red;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* grupa 3 */
+td {
+    border: 5px solid blue;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: rgb(97, 59, 235);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#timer {
+    color: red;
+    text-align: center;
+    cursor: default;
+}
+
+#novaigra>a:link,#novaigra>a:visited {
+    
+    background-color: red;
+    border: 3px solid blue;
+    border-radius: 15px;
+    color: yellow;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 25%;
+    align-items: center;
+}
+
+#novaigra>a:hover,#novaigra>a:active {
+    background-color: blue;
+}
+
+.container {
+    cursor: pointer;
+}
+
+/* za sve */
+#home {
+    text-align: center;
+}
